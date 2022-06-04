@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 
     <title>Unicorn</title>
 </head>
@@ -31,39 +35,28 @@
 
         <!-- nav -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="./img/logo (1).png" alt="Unicorn Logo">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="./assets/img/logo (1).png" alt="Unicorn Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class=" collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about_us.html">About</a>
-                        </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="machine-details.html" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Equipment
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="machine-details.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Who we are
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="main_machine.html">main_machine</a></li>
-                                <li><a class="dropdown-item " href="sub_machine.html">main_machine</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                <li><a class="dropdown-item" href="main_machine.html">About us</a></li>
+                                <li><a class="dropdown-item " href="sub_machine.html">Our Team</a></li>
+
+
                             </ul>
-                        </li> -->
+                        </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="machine-details.html" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="machine-details.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Equipment
                             </a>
                             <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -82,19 +75,23 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact_us.html">Contact</a>
+                            <a class="nav-link" href="about_us.html">Services</a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact_us.html">Crendintals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">News</a>
+                            <a class="nav-link" href="">Contact us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Pricinng</a>
-                        </li>
+
                     </ul>
                     <form class="d-flex">
 
-                        <button class="btn btn-outline-success" type="submit">Login</button>
-                        <button class="btn btn-outline-success" type="submit">Find Machine</button>
+                        <button class="btn btn-outline-success " type="submit">Login</button>
+                        <button class="btn btn-outline-success" type="submit">Find Dealer</button>
                     </form>
                 </div>
             </div>
@@ -106,66 +103,58 @@
 
         <!-- banner -->
         <div class="banner">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./img/banner/BANNER 1.png" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Ride on <br> <span style="color:#FDB900">Roller</span></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eum deserunt sint non
-                                u</p>
-                            <button class="btn button"> Explore</button>
+            <section class="cd-slider">
+                <ul>
+                    <li data-color="">
+                        <div class="content d-flex align-items-center" style="background-image:url('./assets/img/banner/BANNER\ 1.png')">
+                            <div class="container">
+                                <blockquote>
+                                    <p>RIDE ON <br> ROLLER </p>
+                                    <span>Amidst our wide range of products, we are also engaged in offering a wide range of
+                                        Ride on roller or Ride on vibratory roller. </span><br><br>
+                                    <button class="btn button"><a href="#">Explore now</a></button>
+                                </blockquote>
+                            </div>
+
                         </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./img/banner/BANNER 2.png" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Ride on <br> <span style="color:#FDB900">Roller</span></h5>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eum deserunt sint non
-                                ullam </p>
-                            <button class="btn button"> Explore</button>
+                    </li>
+                    <li data-color="#feca0a">
+                        <div class="content  d-flex align-items-center" style="background-image:url('./assets/img/banner/BANNER\ 2.png')">
+                            <div class="container">
+                                <blockquote>
+                                    <p>WALK BEHIND ROLLER</p>
+                                    <span>Walk Behind rollers can be double drum model, both types are self-propelled and
+                                        can work in reverse travel direction. these roller controlled by cable or road
+                                        linkages.</span><br><br>
+                                    <button class="btn button"><a href="#">Explore now</a></button>
+                                </blockquote>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/banner/BANNER 3.png" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Ride on <br> <span style="color:#FDB900">Roller</span></h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita accusantium temporibus
-                                fugiat.</p>
-                            <button class="btn button"> Explore</button>
+                    </li>
+                    <li data-color="#303030">
+                        <div class="content  d-flex align-items-center" style="background-image:url('./assets/img/banner/BANNER\ 3.png')">
+                            <div class="container">
+                                <blockquote>
+                                    <p>BAR CUTTING MACHINE</p>
+                                    <span>Unicorn Equipment a unit of M/S global links is a unique name. which is engaged in
+                                        presenting a wide range of bar cutting machine. This brings duty bar cutting machine
+                                        with strong construction and high quality components.</span><br><br>
+                                    <button class="btn button"><a href="#">Explore now</a></button>
+                                </blockquote>
+                            </div>
                         </div>
+                    </li>
+                </ul>
+                <nav class="sliderr">
+                    <div>
+                        <a class="prev" href="#"></a>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/banner/BANNER 4.png" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Ride on <br> <span style="color:#FDB900">Roller</span></h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis illum quos cum
-                                temporibus.</p>
-                            <button class="btn button"> Explore</button>
-                        </div>
+                    <div>
+                        <a class="next" href="#"></a>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+                </nav>
+            </section>
+
         </div>
         <!-- banner closed -->
 
@@ -182,21 +171,18 @@
                         <form class="mt-5 px-2">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" placeholder=" Enter your email" class="form-control"
-                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" placeholder=" Enter your email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                                 <div class="mb-3 my-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" placeholder=" Enter your Password" class="form-control"
-                                        id="exampleInputPassword1">
+                                    <input type="password" placeholder=" Enter your Password" class="form-control" id="exampleInputPassword1">
                                 </div>
                                 <div class="mb-3 form-check">
                                     <div class="row">
-                                        <div class="col-6"> <input type="checkbox" class="form-check-input"
-                                                id="exampleCheck1">
+                                        <div class="col-6"> <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                             <label class="form-check-label" for="exampleCheck1">Remember me</label>
                                         </div>
-                                        <div class="col-6"><a href="#">Forget password</a></div>
+                                        <div class="col-6 col-sm-6"><a href="#">Forget password</a></div>
                                     </div>
 
                                 </div>
@@ -206,391 +192,406 @@
                                 </div>
                         </form>
 
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 welcome-2 ">
+                        <div class="logo-box"><img src="./assets/img/logo (1).png" class="img-fluid" width="20%" height="20%">
+                        </div>
+                        <div class="heading-logo">
+                            <h2 class="py-4">Welcome Back</h2>
+                        </div>
+                        <ol class="list">
+                            <li>Create an account At Unicorn Equipment</li>
+                            <li>Create an account At Unicorn Equipment</li>
+                            <li>Create an account At Unicorn Equipment</li>
+                        </ol>
+                        <button type="submit" class="btn btn-primary button-submit">Ready to create an account</button>
+
                     </div>
 
                 </div>
-
-                <div class="col-lg-6 col-md-6 welcome-2 ">
-                    <div class="logo-box"><img src="./img/logo (1).png" class="img-fluid" width="20%" height="20%">
-                    </div>
-                    <div class="heading-logo">
-                        <h2 class="py-4">Welcome Back</h2>
-                    </div>
-                    <ol class="list">
-                        <li>Create an account At Unicorn Equipment</li>
-                        <li>Create an account At Unicorn Equipment</li>
-                        <li>Create an account At Unicorn Equipment</li>
-                    </ol>
-                    <button type="submit" class="btn btn-primary button-submit">Ready to create an account</button>
-
-                </div>
-
             </div>
-        </div>
-        <!-- login closed -->
+            <!-- login closed -->
 
-        <!-- category section start -->
-        <section class="category mb-5">
-            <div class="container ">
-                <div class="category_title">
-                    <h2>CATEGORIES</h2>
-                    <h3 class="title_back_heading">OUR PRODUCT</h3>
-                    <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1;">
+            <!-- category section start -->
+            <section class="category mb-5">
+                <div class="container ">
+                    <div class="category_title">
+                        <h2>CATEGORIES</h2>
+                        <h3 class="title_back_heading">OUR PRODUCT</h3>
+                        <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1;">
+
+                    </div>
+                    <div class="row category_items">
+                        <!-- 1 -->
+                        <div class="col-lg-4 col-sm-12 mb-5 text-center">
+                            <div class="background_cat border w-50 m-auto">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button> -->
+                                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button> -->
+                                </div>
+
+                            </div>
+
+                            <p class="category_name">REBAR PROCCESING EQUIPMENTS</p>
+
+
+                        </div>
+
+                        <!-- 2 -->
+
+                        <div class="col-lg-4 col-sm-12 mb-5 text-center ">
+                            <div class="background_cat border  m-auto">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button> -->
+                                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button> -->
+                                </div>
+
+                            </div>
+
+                            <p class="category_name">REBAR PROCCESING EQUIPMENTS</p>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="col-lg-4 col-sm-12 mb-5 text-center ">
+                            <div class="background_cat border w-50 m-auto">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button> -->
+                                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button> -->
+                                </div>
+
+                            </div>
+                            <p class="category_name">REBAR PROCCESING EQUIPMENTS</p>
+
+                        </div>
+                        <!-- 4 -->
+
+                        <div class="col-lg-4 col-sm-12 mb-5 mt-5 text-center ">
+                            <div class="background_cat border w-50 m-auto">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button> -->
+                                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button> -->
+                                </div>
+
+                            </div>
+                            <p class="category_name">REBAR PROCCESING EQUIPMENTS</p>
+
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="col-lg-4 mb-5  col-sm-12 mt-5 text-center ">
+                            <div class="background_cat border w-50 m-auto">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/img/category/cutting machine.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button> -->
+                                    <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button> -->
+                                </div>
+
+                            </div>
+
+                            <p class="category_name">REBAR PROCCESING EQUIPMENTS</p>
+                        </div>
+
+
+                    </div>
 
                 </div>
-                <div class="row category_items">
-                    <div class="col-md-2  m-5"><img src="./img/category/cutting machine.png" class="img-fluid"></div>
-                    <div class="col-md-2 m-5"><img src="./img/category/machine 4.png"></div>
-                    <div class="col-md-2 m-5"><img src="./img/category/machine 5.png"></div>
-                    <div class="col-md-2 m-5"><img src="./img/category/machine 6.png"></div>
-                    <div class="col-md-2 m-5"><img src="./img/category/machine 7.png"></div>
-                    <div class="col-md-2 m-5"><img src="./img/category/machine 8.png"></div>
-                    <div class="col-md-2 m-5"><img src="./img/category/roller.png"></div>
-                    <div class="col-md-2 m-5"><img src="./img/category/walk with roller.png"></div>
-                </div>
+                <!-- button-->
                 <div class="Find-button text-center">
                     <button class="btn btn-primary"><a href="#">Find more</a></button>
                 </div>
-            </div>
+                <!-- button close-->
 
-        </section>
-        <!-- category close -->
+            </section>
+            <!-- category close -->
 
-        <!-- feature   start-->
+            <!-- feature   start-->
 
-        <section class="feature">
-            <div class="container ">
-                <div class="feature_title">
-                    <h2>FEATURE</h2>
-                    <h3 class="feature_back_heading">OUR Best</h3>
-                    <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1; text-align:right;
+            <section class="feature">
+                <div class="container ">
+                    <div class="feature_title">
+                        <h2>FEATURE</h2>
+                        <h3 class="feature_back_heading">OUR Best</h3>
+                        <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1; text-align:right;
                     display:inline-block;">
 
-                </div>
-                <div class="row feature-back">
-                    <div class="col-lg-6 "><img src="./img/img.png" class="img-fluid"></div>
-                    <div class="col-lg-5 ms-4 ">
+                    </div>
+                    <div class="row feature-back d-flex justify-content-between;">
+                        <div class="col-lg-6 "><img src="./assets/img/img.png" class="img-fluid"></div>
+                        <div class="col-lg-5">
 
-                        <div class="row p-3">
-                            <div class="col-md-3 mt-3 ">
-                                <div class="fa_img"><img src="./img/icon.png"></div>
+                            <div class="row featur_details">
+                                <div class="col-md-3 topp  col-sm-3 mt-3 ">
+                                    <div class="fa_img"><img src="./assets/img/icon.png"></div>
+                                </div>
+                                <div class="col-md-9 col-sm-12 fa-content mt-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
                             </div>
-                            <div class="col-md-9  fa-content mt-3 py-4">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
-                            <div class="col-md-3 mt-3 ">
-                                <div class="fa_img"><img src="./img/icon.png"></div>
+                            <div class="row featur_details">
+                                <div class="col-md-3  col-sm-3 mt-3 ">
+                                    <div class="fa_img"><img src="./assets/img/icon.png"></div>
+                                </div>
+                                <div class="col-md-9  col-sm-12 fa-content mt-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
                             </div>
-                            <div class="col-md-9  fa-content mt-3 py-4">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
-                            <div class="col-md-3 mt-3 ">
-                                <div class="fa_img"><img src="./img/icon.png"></div>
+                            <div class="row featur_details">
+                                <div class="col-md-3 col-sm-3 mt-3 ">
+                                    <div class="fa_img"><img src="./assets/img/icon.png"></div>
+                                </div>
+                                <div class="col-md-9 col-sm-12 fa-content mt-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
                             </div>
-                            <div class="col-md-9 fa-content mt-3 py-4">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
-                            <div class="col-md-3 mt-3 ">
-                                <div class="fa_img"><img src="./img/icon.png"></div>
+                            <div class="row featur_details">
+                                <div class="col-md-3 bottomm col-sm-3 mt-3 ">
+                                    <div class="fa_img"><img src="./assets/img/icon.png"></div>
+                                </div>
+                                <div class="col-md-9 col-sm-12 fa-content mt-3 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
                             </div>
-                            <div class="col-md-9  fa-content mt-3 py-4">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Non accusamus natus voluptas voluptatibus </div>
 
                         </div>
+                    </div>
 
+
+
+                </div>
+
+            </section>
+
+
+            <!-- Reward section -->
+            <section class="reward">
+
+                <div class="container reward-main">
+                    <div class="row text-center">
+                        <div class="col-md-4 col-sm-4 my-5"><img src="./assets/img/trophy 1 (Traced).png"><br>
+                            <h3>Order now</h3>
+                            <br>
+                            <h4>5000</h4>
+                        </div>
+                        <div class="col-md-4 col-sm-4 my-5"><img src="./assets/img/Group 21.png"><br>
+                            <h3>Order now</h3>
+                            <br>
+                            <h4>5000</h4>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 my-5"><img src="./assets/img/verify.png"><br>
+                            <h3>Order now</h3>
+                            <br>
+                            <h4>5000</h4>
+                        </div>
                     </div>
                 </div>
 
+            </section>
 
+            <!-- rewar section closed -->
 
-            </div>
+            <!-- testimonional -->
 
-        </section>
+            <section class="testimonials ">
+                <div class="container">
+                    <div class="category_title">
+                        <h2>OUR CLIENT</h2>
+                        <h3 class="title_back_heading">TESTIMONIALS</h3>
+                        <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1;">
 
-
-        <!-- Reward section -->
-        <section class="reward">
-
-            <div class="container reward-main">
-                <div class="row text-center">
-                    <div class="col-md-4 my-5"><img src="./img/trophy 1 (Traced).png"><br>
-                        <h3>Order now</h3>
                     </div>
-                    <div class="col-md-4 my-5"><img src="./img/Group 21.png"><br>
-                        <h3>Order now</h3>
-                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12  col-md-7 test_box_1"><img src="./assets/img/Mask group.png" class="img-fluid"></div>
 
-                    <div class="col-md-4 my-5"><img src="./img/verify.png"><br>
-                        <h3>Order now</h3>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- rewar section closed -->
-
-        <!-- testimonional -->
-
-        <section class="testimonials ">
-            <div class="container">
-                <div class="category_title">
-                    <h2>OUR CLIENT</h2>
-                    <h3 class="title_back_heading">TESTIMONIALS</h3>
-                    <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1;">
-
-                </div>
-                <div class="row">
-                    <div class="col-lg-7  test_box_1"><img src="./img/Mask group.png" class="img-fluid"></div>
-
-                    <div class="col-lg-8 test_box_2 bg-dark">
-                        <div class="row">
-                            <div class="col-lg-5"></div>
-                            <div class="col-lg-7">
-                                <div class="content-test">
-                                    <!-- reviews -->
-                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <h3>Rishabh thakur</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-                                                    excepturi sed impedit quos, aut nesciunt, sunt non labore dolore
-                                                    quibusdam et velit tempore eligendi. Error expedita quae deserunt
-                                                    dicta aliquid!</p>
+                        <div class="col-lg-8 col-sm-12 col-md-7 test_box_2 bg-dark">
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 col-sm-7 col-md-8-">
+                                    <div class="content-test">
+                                        <!-- reviews -->
+                                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                             </div>
-                                            <div class="carousel-item ">
-                                                <h3>Anuj</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-                                                    excepturi sed impedit quos, aut nesciunt, sunt non labore dolore
-                                                    quibusdam et velit tempore eligendi. Error expedita quae deserunt
-                                                    dicta aliquid!</p>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <h3>Rishabh thakur</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi sed impedit quos, aut nesciunt, sunt non labore dolore quibusdam et velit tempore eligendi. Error expedita quae deserunt
+                                                        dicta aliquid!</p>
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <h3>Anuj</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi sed impedit quos, aut nesciunt, sunt non labore dolore quibusdam et velit tempore eligendi. Error expedita quae deserunt
+                                                        dicta aliquid!</p>
+                                                </div>
+                                                <div class="carousel-item ">
+                                                    <h3>Rohit</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus excepturi sed impedit quos, aut nesciunt, sunt non labore dolore quibusdam et velit tempore eligendi. Error expedita quae deserunt
+                                                        dicta aliquid!</p>
+                                                </div>
                                             </div>
-                                            <div class="carousel-item ">
-                                                <h3>Rohit</h3>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-                                                    excepturi sed impedit quos, aut nesciunt, sunt non labore dolore
-                                                    quibusdam et velit tempore eligendi. Error expedita quae deserunt
-                                                    dicta aliquid!</p>
-                                            </div>
-                                        </div>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+                    </div>
+                </div>
+            </section>
+            <!-- testimonial closed -->
+
+            <!-- association -->
+            <section class="association">
+                <div class="container-fluid">
+                    <div class="asso_title">
+                        <h2> ASSOCIATION</h2>
+                        <h3 class="asso_back_heading"> OUR</h3>
+                        <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1; text-align:right; margin-right: 130px;  display:inline-block;">
+
+                    </div>
+
+                    <div class="row association_bg text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-4 px-5"><img src="./assets/img/logo 1ds.png" class="img-fluid"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4  mt-3 px-5"><img src="./img/logo 2ds.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 px-5"><img src="./assets/img/logo 3ds.png" class="img-fluid"></div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- association closed -->
+
+
+            <!-- update start-->
+            <div class="our_update">
+                <div class="container">
+                    <div class="category_title">
+                        <h2>OUR LATEST</h2>
+                        <h3 class="title_back_heading">UPDATE </h3>
+                        <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1;">
 
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- testimonial closed -->
 
-        <!-- association -->
-        <section class="association">
-            <div class="container-fluid">
-                <div class="asso_title">
-                    <h2> ASSOCIATION</h2>
-                    <h3 class="asso_back_heading"> OUR</h3>
-                    <hr
-                        style="width: 6%; height: 4px; color: #feb902; opacity: 1; text-align:right; margin-right: 130px;  display:inline-block;">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="video-content">
+                                    <div class="card-video">
+                                        <iframe width="100%" height="220px" border-radius="" src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="yes"></iframe>
+                                    </div>
+                                </div>
 
-                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="video-content">
+                                    <div class="card-video">
+                                        <iframe width="100%" height="220px" border-radius="" src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="yes"></iframe>
+                                    </div>
+                                </div>
+                            </div>
 
-                <div class="row association_bg text-center">
-                    <div class="col-lg-4"><img src="./img/logo 1ds.png" class="img-fluid"></div>
-                    <div class="col-lg-4"><img src="./img/logo 2ds.png" class="img-fluid"></div>
-                    <div class="col-lg-4"><img src="./img/logo 3ds.png" class="img-fluid"></div>
-                </div>
-            </div>
-
-        </section>
-        <!-- association closed -->
-
-
-        <!-- update start-->
-        <div class="our_update">
-            <div class="container">
-                <div class="category_title">
-                    <h2>OUR LATEST</h2>
-                    <h3 class="title_back_heading">UPDATE </h3>
-                    <hr style="width: 6%; height: 4px; color: #feb902; opacity: 1;">
-
-                </div>
-
-                <!-- LATETS -->
-
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
 
-                        <!-- NEWS-1 -->
-                        <div class="carousel-item active">
-                            <div class="row card_news">
-                                <div class="col-lg-4 offset-md-1 border p-4 news">
-                                    <div class="vedio-img">
-                                        <iframe width="100%" height="250px" border-radius=""
-                                            src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen="yes"></iframe>
-                                    </div>
-                                    <h6 style="font-size:30px; color: #FDB900; font-weight: 500;" class="mt-2">Vedio
-                                    </h6>
-
-                                    <div class="play-button">
-                                        <div class="row">
-                                            <div class="col sm-3 play-button_1"><i class="fas fa-play-circle"></i>
-                                                &nbsp; Play</div>
-                                            <div class="col-sm-8"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 offset-md-1 border p-4 news">
-                                    <div class="vedio-img">
-                                        <iframe width="100%" height="250px" border-radius=""
-                                            src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen="yes"></iframe>
-                                    </div>
-                                    <h6 style="font-size:30px; color: #FDB900; font-weight: 500;" class="mt-2">Vedio
-                                    </h6>
-
-                                    <div class="play-button">
-                                        <div class="row">
-                                            <div class="col sm-3 play-button_1"><i class="fas fa-play-circle"></i>
-                                                &nbsp; Play</div>
-                                            <div class="col-sm-8"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row card_news">
-                                <div class="col-lg-4 offset-md-1 border p-4 news">
-                                    <div class="vedio-img">
-                                        <iframe width="100%" height="250px" border-radius=""
-                                            src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen="yes"></iframe>
-                                    </div>
-                                    <h6 style="font-size:30px; color: #FDB900; font-weight: 500;" class="mt-2">Vedio
-                                    </h6>
-
-                                    <div class="play-button">
-                                        <div class="row">
-                                            <div class="col sm-3 play-button_1"><i class="fas fa-play-circle"></i>
-                                                &nbsp; Play</div>
-                                            <div class="col-sm-8"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 offset-md-1 border p-4 news">
-                                    <div class="vedio-img">
-                                        <iframe width="100%" height="250px" border-radius=""
-                                            src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen="yes"></iframe>
-                                    </div>
-                                    <h6 style="font-size:30px; color: #FDB900; font-weight: 500;" class="mt-2">Vedio
-                                    </h6>
-
-                                    <div class="play-button">
-                                        <div class="row">
-                                            <div class="col sm-3 play-button_1"><i class="fas fa-play-circle"></i>
-                                                &nbsp; Play</div>
-                                            <div class="col-sm-8"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row card_news">
-                                <div class="col-lg-4 offset-md-1 border p-4 news">
-                                    <div class="vedio-img">
-                                        <iframe width="100%" height="250px" border-radius=""
-                                            src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen="yes"></iframe>
-                                    </div>
-                                    <h6 style="font-size:30px; color: #FDB900; font-weight: 500;" class="mt-2">Vedio
-                                    </h6>
-
-                                    <div class="play-button">
-                                        <div class="row">
-                                            <div class="col sm-3 play-button_1"><i class="fas fa-play-circle"></i>
-                                                &nbsp; Play</div>
-                                            <div class="col-sm-8"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 offset-md-1 border p-4 news">
-                                    <div class="vedio-img">
-                                        <iframe width="100%" height="250px" border-radius=""
-                                            src="https://www.youtube.com/embed/D0UnqGm_miA" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen="yes"></iframe>
-                                    </div>
-                                    <h6 style="font-size:30px; color: #FDB900; font-weight: 500;" class="mt-2">Vedio
-                                    </h6>
-
-                                    <div class="play-button">
-                                        <div class="row">
-                                            <div class="col sm-3 play-button_1"><i class="fas fa-play-circle"></i>
-                                                &nbsp; Play</div>
-                                            <div class="col-sm-8"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
+
             </div>
-        </div>
-        <!-- update close -->
+            <!-- update close -->
 
 
 
     </main>
+
+
+
 
 
     <!-- footer -->
@@ -607,11 +608,10 @@
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
                             <div class="footerlogo fw-bold mb-4  text-left">
-                                <img src="./img/logo (1).png" alt="">
+                                <img src="./assets/img/logo (1).png" alt="">
                             </div>
                             <p class=" text-left">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatem in
-                                officia, iste eveniet soluta at perferendis, iusto deleniti aperiam, Molestias saepe.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatem in officia, iste eveniet soluta at perferendis, iusto deleniti aperiam, Molestias saepe.
                             </p>
                         </div>
 
@@ -688,14 +688,45 @@
     </section>
 
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper js slide video -->
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./assets/js/banner.js"></script>
+
 </body>
-
-
-
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-
 
 </html>
