@@ -22,8 +22,9 @@ body {
 .innerpagebanner {
     height: 400px;
     width: 100%;
-    margin-top: -100px;
-    background-image: url('../img/header_background.png');
+   background-position: center;
+   background-size: cover;
+    background-image: url('../img/header_banner.jpg');
     z-index: -1;
     position: relative;
 }
@@ -447,4 +448,47 @@ a.intrestedbtn:hover {
 .section-team .single-person:hover .full-name,
 .section-team .single-person:hover .speciality {
     color: #fff;
+}
+
+/* contact us page css start here */
+
+.contactdetails {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.contact_heading {
+    font-size: 15PX;
+    color: #737170;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.headquater {
+    font-weight: 600;
+    color: #FDB900;
+    font-size: 35px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.address{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 2;
+
+}
+.address i{
+    font-size: 40px;
+    margin-top: 34px;
+    color: #737170;
+}
+.address a{
+    color: #000;
+}
+.map_box{
+    width: 35%;
+ 
+    top:0px;
+    right: 0px;
 }
