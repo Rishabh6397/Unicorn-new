@@ -25,8 +25,7 @@ body {
    background-position: center;
    background-size: cover;
     background-image: url('../img/header_banner.png');
-    z-index: -1;
-    position: relative;
+    z-index: -1;    
 }
 
 @media (max-width:768px){
@@ -551,4 +550,33 @@ a.intrestedbtn:hover {
 .serachdatatable{
     margin-top: 80px;
     margin-bottom: 80px;
+}
+
+/* search page  */
+
+
+.mainheadertitle .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 40%;
+    /* align-items: flex-end; */
+    float: right;
+
+}
+.mainheadertitle .input-group .btn{
+
+    position: relative;
+    right: 64px;
+    top: 5px;
+    color: black;
+}
+.mainheadertitle .input-group .btn:hover{
+    border: none;
+}
+
+.mainheadertitle .input-group i{
+    color: black;
+    font-size: 35px;
 }
