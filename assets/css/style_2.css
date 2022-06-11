@@ -20,19 +20,31 @@ body {
 }
 
 .innerpagebanner {
-    height: 400px;
+    height: 480px;
     width: 100%;
    background-position: center;
    background-size: cover;
-    background-image: url('../img/header_banner.jpg');
+    background-image: url('../img/header_banner.png');
     z-index: -1;
     position: relative;
 }
 
+@media (max-width:768px){
+    .innerpagebanner{
+      height: 100px;
+    }
+    .mainheadertitle h1{
+        font-size: 20px !important;
+    }
+
+    
+}
+
 .mainheadertitle h1 {
-    color:black;
-    font-size: 54px;
+    color:#FDB900;
+    font-size: 80px;
     font-weight: 700;
+    text-align: right;
 
     /* margin: 130px 0px 0px 0px; */
 }
@@ -525,4 +537,14 @@ a.intrestedbtn:hover {
     .services{
         padding: 20px;
     }
+
+
+
+}
+
+/* crendentials */
+
+.crendentials{
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
