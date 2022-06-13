@@ -103,8 +103,8 @@
     </div>
     <!-- header closed -->
 
-     <!--banner section start-->
-     <section class="innerpagebanner d-flex align-items-center">
+    <!--banner section start-->
+    <section class="innerpagebanner d-flex align-items-center">
 
         <div class="container">
             <div class="mainheadertitle text-center">
@@ -127,11 +127,12 @@
                     </h1>
 
                     <!-- service form -->
+                    <form>
                     <div class="row my-5">
+                       
+                            <!-- 1 -->
+                            <div class="col-lg-6">
 
-                        <!-- 1 -->
-                        <div class="col-lg-6">
-                            <form>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Name</label>
                                     <input type="text" class="form-control" id="exampleInputName">
@@ -144,13 +145,12 @@
 
                                 </div>
 
-                            </form>
-                        </div>
 
+                            </div>
 
-                        <!-- 2 -->
-                        <div class="col-lg-6">
-                            <form>
+                            <!-- 2 -->
+                            <div class="col-lg-6">
+
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Phone no</label>
                                     <input type="text" class="form-control" id="exampleInputPhone">
@@ -161,55 +161,54 @@
                                     <textarea id="address" class="form-control"></textarea>
                                 </div>
 
+                            </div>
 
+                            <!-- last row  -->
 
-                            </form>
-                        </div>
+                            <div class="col-lg-4">
 
-                        <!-- last row  -->
-
-                        <div class="col-lg-4">
-                            <form>
                                 <div class="mb-3">
                                     <label for="exampleInputphoto" class="form-label">Upload Photos</label>
                                     <input type="file" name="service_invoice[]" multiple="" class="form-control"
                                         accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
 
                                 </div>
-                            </form>
-                        </div>
-                        <div class="col-lg-4">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputphoto" class="form-label">Upload Videos</label>
-                                    <input type="file" class="form-control" name="service_videos[]" accept="video/*"
-                                        multiple="">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-lg-4">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="exampleInputphoto" class="form-label">Upload Invoice Coppy </label>
-                                    <input type="file" name="service_invoice[]" multiple="" class="form-control"
-                                        accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
 
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- last row closed  -->
-                        <div class="col-sm-4">
-                            <div class="mb-3  mt-3 my-2 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">I agree<a href="#" style="color:blue ;"> Terms & Condition.</a></label>
                             </div>
-                        </div>
-                        
-                        <!-- button -->
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
+                            <div class="col-lg-4">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputphoto" class="form-label">Upload Videos</label>
+                                        <input type="file" class="form-control" name="service_videos[]" accept="video/*"
+                                            multiple="">
+                                    </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputphoto" class="form-label">Upload Invoice Coppy </label>
+                                        <input type="file" name="service_invoice[]" multiple="" class="form-control"
+                                            accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+
+                                    </div>
+
+                            </div>
+
+                            <!-- last row closed  -->
+                            <div class="col-sm-4">
+                                <div class="mb-3  mt-3 my-2 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">I agree<a href="#"
+                                            style="color:blue ;"> Terms & Condition.</a></label>
+                                </div>
+                            </div>
+
+                            <!-- button -->
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

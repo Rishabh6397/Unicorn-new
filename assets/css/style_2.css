@@ -22,25 +22,26 @@ body {
 .innerpagebanner {
     height: 480px;
     width: 100%;
-   background-position: center;
-   background-size: cover;
+    background-position: center;
+    background-size: cover;
     background-image: url('../img/header_banner.png');
-    z-index: -1;    
+    z-index: -1;
 }
 
-@media (max-width:768px){
-    .innerpagebanner{
-      height: 100px;
+@media (max-width:768px) {
+    .innerpagebanner {
+        height: 100px;
     }
-    .mainheadertitle h1{
+
+    .mainheadertitle h1 {
         font-size: 20px !important;
     }
 
-    
+
 }
 
 .mainheadertitle h1 {
-    color:#FDB900;
+    color: #FDB900;
     font-size: 80px;
     font-weight: 700;
     text-align: right;
@@ -462,9 +463,8 @@ a.intrestedbtn:hover {
 }
 
 /* contact us page css start here */
-.contactpagebanner{
-   
-}
+.contactpagebanner {}
+
 .contactdetails {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -485,43 +485,50 @@ a.intrestedbtn:hover {
     margin-left: 60px;
     margin-top: 10px;
 }
-.address{
+
+.address {
     margin-top: 20px;
     margin-bottom: 40px;
     line-height: 2;
 
 }
-.address i{
+
+.address i {
     font-size: 40px;
     margin-top: 34px;
     color: #737170;
 }
-.address a{
+
+.address a {
     color: #000;
 }
-.map_box{
+
+.map_box {
     width: 35%;
- 
-    top:0px;
+
+    top: 0px;
     right: 0px;
 }
 
 /* services page */
-.services{
+.services {
 
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.services_main{
+
+.services_main {
     border-radius: 30px;
     padding: 45px;
     background-color: #FDB900;
 }
-.Your_Service{
+
+.Your_Service {
     padding: 35px;
     border-radius: 30px;
 }
-.Your_Service h1{
+
+.Your_Service h1 {
     font-weight: 600;
     margin-top: 5px;
 }
@@ -532,8 +539,8 @@ a.intrestedbtn:hover {
 
 
 /* responsive */
-@media (max-width:768px){
-    .services{
+@media (max-width:768px) {
+    .services {
         padding: 20px;
     }
 
@@ -543,11 +550,12 @@ a.intrestedbtn:hover {
 
 /* crendentials */
 
-.crendentials{
+.crendentials {
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.serachdatatable{
+
+.serachdatatable {
     margin-top: 80px;
     margin-bottom: 80px;
 }
@@ -556,7 +564,7 @@ a.intrestedbtn:hover {
 
 
 .mainheadertitle .input-group {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -565,18 +573,36 @@ a.intrestedbtn:hover {
     float: right;
 
 }
-.mainheadertitle .input-group .btn{
+
+.mainheadertitle .input-group .btn {
 
     position: relative;
     right: 64px;
     top: 5px;
     color: black;
 }
-.mainheadertitle .input-group .btn:hover{
+
+.mainheadertitle .input-group .btn:hover {
     border: none;
 }
 
-.mainheadertitle .input-group i{
+.mainheadertitle .input-group i {
     color: black;
     font-size: 35px;
+}
+
+/* responsie */
+@media (max-width:768px) {
+    .mainheadertitle .input-group .btn {
+        display: none;
+
+    }
+
+    .mainheadertitle  .form-control {
+        padding: 8px;
+    }
+
+    .mainheadertitle .form-control {
+        width:70%;
+    }
 }
