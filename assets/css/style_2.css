@@ -24,8 +24,24 @@ body {
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-image: url('../img/header_banner.png');
+    background-image: url('../img/banner/all_machine.jpg');
     z-index: -1;
+}
+
+.mainheadertitle {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+.mainheadertitle h1 {
+    color: #FDB900;
+    z-index: 2;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+
+    /* margin: 130px 0px 0px 0px; */
 }
 
 @media (max-width:768px) {
@@ -40,14 +56,7 @@ body {
 
 }
 
-.mainheadertitle h1 {
-    color: #FDB900;
-    font-size: 80px;
-    font-weight: 700;
-    text-align: right;
 
-    /* margin: 130px 0px 0px 0px; */
-}
 
 .mainmachineinner {
     border: none;
@@ -598,11 +607,11 @@ a.intrestedbtn:hover {
 
     }
 
-    .mainheadertitle  .form-control {
+    .mainheadertitle .form-control {
         padding: 8px;
     }
 
     .mainheadertitle .form-control {
-        width:70%;
+        width: 70%;
     }
 }
